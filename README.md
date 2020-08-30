@@ -33,13 +33,13 @@ CatBoost {'depth': [2, 4], 'learning_rate' : [0.1, 0.3], 'l2_leaf_reg' : [10,20]
 
 ### Metrics
 The algorithms were tested on the following metrics:
--TPR - True positive rate
--FPR - False positive rate
--Precision 
--ROC-AUC - The area under the ROC curve
--Precision-Recall AUC - the area under the precision-recall curve
--Training time in seconds
--Inference time of 1000 records measured in seconds
+- TPR - True positive rate
+- FPR - False positive rate
+- Precision 
+- ROC-AUC - The area under the ROC curve
+- Precision-Recall AUC - the area under the precision-recall curve
+- Training time in seconds
+- Inference time of 1000 records measured in seconds
 
 For multiclass datasets, we calculate the average score of each metric without weights.
 
