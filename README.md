@@ -3,7 +3,7 @@
 This project is part of an assignment. 
 We compared three ensembles based decision trees to CatBoost over 150 datasets.
 
-The models were trained using Colab
+The models were trained using Google Colab.
 
 The algorithms we tested were:
 
@@ -15,7 +15,7 @@ The algorithms we tested were:
 
 ## running the code
 
-The notebooks folder contains notebooks to run the code. All the code was trained using google colab.
+The notebooks folder contains notebooks to run the code. All the code was trained using Google Colab.
 1. Open google colab
 2. Upload the notebook
 3. Add the path to the dataset in the places where is it mentioned.
