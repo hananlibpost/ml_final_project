@@ -13,7 +13,7 @@ The algorithms we tested were:
 4.  **CatBoost** CatBoost: unbiased boosting with categorical features [[pdf]](https://arxiv.org/pdf/1706.09516.pdf "pdf") [[code]](https://github.com/catboost/catboost "code")
 
 
-## running the code
+## Running the code
 
 The notebooks folder contains notebooks to run the code. All the code was trained using Google Colab.
 1. Open google colab
@@ -23,13 +23,26 @@ The notebooks folder contains notebooks to run the code. All the code was traine
 
 
 
-### hyperparameters
+### Hyperparameters
 Hyperparameters values used to tune the model
 
 mGBDT : {'num_boosted_round': [1, 8], 'max_depth' : [2, 7]} <br/>
 ThunderGBM : {'depth' : [4,10], 'n_trees' :[10, 80]} <br/>
 NODE: {'depth' : [2, 8], 'num_layers' : [2,4]} <br/>
 CatBoost {'depth': [2, 4], 'learning_rate' : [0.1, 0.3], 'l2_leaf_reg' : [10,20]} <br/>
+
+### Metrics
+The algorithms were tested on the following metrics:
+-TPR - True positive rate
+-FPR - False positive rate
+-Precision 
+-ROC-AUC - The area under the ROC curve
+-Precision-Recall AUC - the area under the precision-recall curve
+-Training time in seconds
+-Inference time of 1000 records measured in seconds
+
+For multiclass datasets, we calculate the average score of each metric without weights.
+
 
 ## **Papers**:
 Feng, J., Yu, Y. and Zhou, Z.H., 2018. Multi-layered gradient boosting decision trees. In Advances in neural information processing systems (pp. 3551-3561). [pdf](http://papers.nips.cc/paper/7614-multi-layered-gradient-boosting-decision-trees.pdf "[pdf]")
